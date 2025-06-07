@@ -1,9 +1,13 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
+import { RouterView } from "vue-router";
+import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
-  <HelloWorld msg="Vite + Vue" />
+  <div class="max-w-7xl mx-auto">
+    <Navbar />
+    <RouterView />
+  </div>
 </template>
 
 <style scoped></style>

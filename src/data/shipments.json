@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "origin": "Bekasi",
+    "destination": "Surabaya",
+    "status": "Not Assigned",
+    "route": "Tol Trans Jawa",
+    "vehicleType": "Truck",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:00:00Z"
+  },
+  {
+    "id": 2,
+    "origin": "Jakarta",
+    "destination": "Semarang",
+    "status": "Not Assigned",
+    "route": "Jalur Pantura",
+    "vehicleType": "Container",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:01:00Z"
+  },
+  {
+    "id": 3,
+    "origin": "Bandung",
+    "destination": "Yogyakarta",
+    "status": "Not Assigned",
+    "route": "Cipali - Selatan",
+    "vehicleType": "Pickup",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:02:00Z"
+  },
+  {
+    "id": 4,
+    "origin": "Tangerang",
+    "destination": "Solo",
+    "status": "Not Assigned",
+    "route": "Tol Cipali - Tol Solo",
+    "vehicleType": "Van",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:03:00Z"
+  },
+  {
+    "id": 5,
+    "origin": "Depok",
+    "destination": "Malang",
+    "status": "Not Assigned",
+    "route": "Via Surabaya",
+    "vehicleType": "Truck",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:04:00Z"
+  },
+  {
+    "id": 6,
+    "origin": "Bogor",
+    "destination": "Surabaya",
+    "status": "Not Assigned",
+    "route": "Tol Trans Jawa",
+    "vehicleType": "Container",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:05:00Z"
+  },
+  {
+    "id": 7,
+    "origin": "Cikarang",
+    "destination": "Solo",
+    "status": "Not Assigned",
+    "route": "Jalur Selatan",
+    "vehicleType": "Van",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:06:00Z"
+  },
+  {
+    "id": 8,
+    "origin": "Karawang",
+    "destination": "Kediri",
+    "status": "Not Assigned",
+    "route": "Tol Ngawi - Kertosono",
+    "vehicleType": "Truck",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:07:00Z"
+  },
+  {
+    "id": 9,
+    "origin": "Purwakarta",
+    "destination": "Blitar",
+    "status": "Not Assigned",
+    "route": "Via Tulungagung",
+    "vehicleType": "Pickup",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:08:00Z"
+  },
+  {
+    "id": 10,
+    "origin": "Cimahi",
+    "destination": "Magelang",
+    "status": "Not Assigned",
+    "route": "Via Yogyakarta",
+    "vehicleType": "Van",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:09:00Z"
+  },
+  {
+    "id": 11,
+    "origin": "Cilegon",
+    "destination": "Madiun",
+    "status": "Not Assigned",
+    "route": "Tol Cipali - Ngawi",
+    "vehicleType": "Truck",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:10:00Z"
+  },
+  {
+    "id": 12,
+    "origin": "Serang",
+    "destination": "Pasuruan",
+    "status": "Not Assigned",
+    "route": "Via Mojokerto",
+    "vehicleType": "Container",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:11:00Z"
+  },
+  {
+    "id": 13,
+    "origin": "Cianjur",
+    "destination": "Probolinggo",
+    "status": "Not Assigned",
+    "route": "Tol Probolinggo Timur",
+    "vehicleType": "Pickup",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:12:00Z"
+  },
+  {
+    "id": 14,
+    "origin": "Sukabumi",
+    "destination": "Jember",
+    "status": "Not Assigned",
+    "route": "Via Lumajang",
+    "vehicleType": "Van",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:13:00Z"
+  },
+  {
+    "id": 15,
+    "origin": "Garut",
+    "destination": "Banyuwangi",
+    "status": "Not Assigned",
+    "route": "Tol Situbondo",
+    "vehicleType": "Truck",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:14:00Z"
+  },
+  {
+    "id": 16,
+    "origin": "Tasikmalaya",
+    "destination": "Bojonegoro",
+    "status": "Not Assigned",
+    "route": "Jalur Tengah Jawa",
+    "vehicleType": "Container",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:15:00Z"
+  },
+  {
+    "id": 17,
+    "origin": "Majalengka",
+    "destination": "Tuban",
+    "status": "Not Assigned",
+    "route": "Via Lamongan",
+    "vehicleType": "Van",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:16:00Z"
+  },
+  {
+    "id": 18,
+    "origin": "Indramayu",
+    "destination": "Sidoarjo",
+    "status": "Not Assigned",
+    "route": "Tol Trans Jawa",
+    "vehicleType": "Truck",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:17:00Z"
+  },
+  {
+    "id": 19,
+    "origin": "Subang",
+    "destination": "Ngawi",
+    "status": "Not Assigned",
+    "route": "Tol Ngawi",
+    "vehicleType": "Pickup",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:18:00Z"
+  },
+  {
+    "id": 20,
+    "origin": "Sumedang",
+    "destination": "Ponorogo",
+    "status": "Not Assigned",
+    "route": "Via Madiun",
+    "vehicleType": "Van",
+    "assignedTransporter": null,
+    "createdAt": "2025-06-06T09:19:00Z"
+  }
+]
