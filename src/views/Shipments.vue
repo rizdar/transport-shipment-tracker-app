@@ -1,11 +1,42 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, h } from "vue";
 import { fetchShipments } from "../services/shipmentService";
 import { ROUTE_NAMES } from "../constants/routerName";
 import Loading from "../components/Loading.vue";
-
+import TableShipments from "../components/TableShipments.vue";
+import shipment from "../data/shipments.json";
+import { format } from "date-fns";
+import ViewButton from "../components/ViewButton.vue";
+import DataTable from "../components/table/DataTable.vue";
 const shipments = ref([]);
 const loading = ref(true);
+
+const columnsShipment = [
+  {
+    accessorKey: "id",
+    header: "ID",
+    enableSorting: false,
+  },
+  {
+    accessorFn: (row) => `${row.origin} - ${row.destination}`,
+    header: "Origin / Destination",
+  },
+  {
+    accessorKey: "status",
+    header: "Status",
+  },
+  {
+    accessorKey: "createdAt",
+    header: "Created at",
+    cell: (info) => format(new Date(info.getValue()), "d MMM, yyyy"),
+  },
+  {
+    accessorKey: "view",
+    header: "",
+    cell: ({ row }) => h(ViewButton, { id: row.original.id }),
+    enableSorting: false,
+  },
+];
 
 onMounted(async () => {
   loading.value = true;
@@ -15,10 +46,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <h1>shipment list</h1>
-  <p>This is shipment list</p>
-
-  <Loading v-if="loading" />
+  <!-- <Loading v-if="loading" />
   <div v-else>
     <ul>
       <li v-for="shipment in shipments" :key="shipment.id">
@@ -32,7 +60,10 @@ onMounted(async () => {
         </router-link>
       </li>
     </ul>
-  </div>
+  </div> -->
+
+  <!-- <TableShipments :data="shipment" :columns="columnsShipment" /> -->
+  <DataTable :data="shipment" :columns="columnsShipment" />
 </template>
 
 <style scoped></style>
