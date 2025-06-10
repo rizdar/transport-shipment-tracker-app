@@ -2,25 +2,27 @@
 
 ## Project structure
 
+```bash
 transport-shipment-tracker-app/
-├── public/ # Static files (e.g., images, favicon)
-├── src/ # Main application source code
-│ ├── assets/ # Project assets (images, logos, etc.)
-│ ├── components/ # Reusable Vue components
-│ ├── constans/ # Constant values used across the app
-│ ├── data/ # Mock or static data (JSON, etc.)
-│ ├── routes/ # Vue Router configuration and route definitions
-│ ├── services/ # API calls or external service handlers
-│ ├── store/ # Pinia store modules for state management
-│ ├── views/ # Page-level Vue components
-│ ├── App.vue # Root Vue component
-│ ├── main.js # Application entry point
-│ └── style.css # Global styles
-├── index.html # Main HTML file used by Vite
-├── vite.config.js # Vite configuration file
-├── package.json # Project metadata and dependencies
-├── .gitignore # Git ignore rules
-└── README.md # Project documentation
+├── public/                 # Static files (e.g., images, favicon)
+├── src/                    # Main source code
+│   ├── assets/             # Images, icons, etc.
+│   ├── components/         # Reusable Vue components
+│   ├── constans/           # Constant values used throughout the app
+│   ├── data/               # Static/mock data files
+│   ├── routes/             # Vue Router configuration
+│   ├── services/           # API calls and service logic
+│   ├── store/              # Pinia store modules
+│   ├── views/              # Page-level Vue components
+│   ├── App.vue             # Root component
+│   ├── main.js             # App entry point
+│   └── style.css           # Global styles
+├── index.html              # HTML template for Vite
+├── vite.config.js          # Vite configuration
+├── .gitignore              # Git ignore rules
+├── package.json            # Project metadata and dependencies
+└── README.md               # Project documentation
+```
 
 ## Requirement
 
