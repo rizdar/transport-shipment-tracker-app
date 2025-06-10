@@ -1,5 +1,6 @@
 <script setup>
 import { ROUTE_NAMES } from "../constants/routerName";
+import { EyeIcon } from "@heroicons/vue/24/solid";
 
 const props = defineProps({
   id: Number,
@@ -14,6 +15,6 @@ const props = defineProps({
       params: { id: props.id },
     }"
   >
-    View
+    <EyeIcon class="w-5 h-5 text-blue-500" />
   </router-link>
 </template>

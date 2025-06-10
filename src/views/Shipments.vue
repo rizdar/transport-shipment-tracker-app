@@ -1,15 +1,12 @@
 <script setup>
-import { ref, onMounted, h } from "vue";
-import { fetchShipments } from "../services/shipmentService";
-import { ROUTE_NAMES } from "../constants/routerName";
+import { onMounted, h } from "vue";
 import Loading from "../components/Loading.vue";
-import TableShipments from "../components/TableShipments.vue";
-import shipment from "../data/shipments.json";
 import { format } from "date-fns";
 import ViewButton from "../components/ViewButton.vue";
 import DataTable from "../components/table/DataTable.vue";
-const shipments = ref([]);
-const loading = ref(true);
+import { useShipmentStore } from "../stores/shipment";
+
+const shipmentStore = useShipmentStore();
 
 const columnsShipment = [
   {
@@ -38,32 +35,24 @@ const columnsShipment = [
   },
 ];
 
-onMounted(async () => {
-  loading.value = true;
-  shipments.value = await fetchShipments();
-  loading.value = false;
+onMounted(() => {
+  shipmentStore.loadShipments();
 });
 </script>
 
 <template>
-  <!-- <Loading v-if="loading" />
-  <div v-else>
-    <ul>
-      <li v-for="shipment in shipments" :key="shipment.id">
-        <router-link
-          :to="{
-            name: ROUTE_NAMES.SHIPMENT_DETAIL,
-            params: { id: shipment.id },
-          }"
-        >
-          {{ shipment.id }} - {{ shipment.origin }} → {{ shipment.destination }}
-        </router-link>
-      </li>
-    </ul>
-  </div> -->
+  <div class="p-4">
+    <div
+      v-if="shipmentStore.loading"
+      class="flex justify-center items-center min-h-[300px]"
+    >
+      <Loading />
+    </div>
 
-  <!-- <TableShipments :data="shipment" :columns="columnsShipment" /> -->
-  <DataTable :data="shipment" :columns="columnsShipment" />
+    <DataTable
+      v-else
+      :data="shipmentStore.shipments"
+      :columns="columnsShipment"
+    />
+  </div>
 </template>
-
-<style scoped></style>
